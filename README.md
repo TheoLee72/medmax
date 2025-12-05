@@ -1,36 +1,19 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MedMax MVP 기획
 
-## Getting Started
+# 유저 플로우
 
-First, run the development server:
+- 웹사이트에서 > 로그인(본인 인증) > 건강검진 예약 > **건강검진 완료 > 카카오톡 알림 발송** > 로그인 > 건강검진 완료 인증 > 리워드 제공 > 상품권 변환
+- 문제 사항
+  - 건강검진이 완료되었다는 것을 알 수가 없어서, 카카오톡 알림 발송을 언제 해야 할지 모호함
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# 웹사이트
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 카카오톡 로그인
+- 협력 병원 3개 리스트
+  - 클릭하면 네이버 지도로 이동
+- 파일 업로드 기능 (건강검진 완료 인증용)
+- 리워드를 상품권으로 바꿀 수 있는 페이지
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# 자동화 기능
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 건강검진이 완료되었을 때 카카오톡 알림을 발송하기 (알림톡 기능)
