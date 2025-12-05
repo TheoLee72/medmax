@@ -3,6 +3,8 @@ import { createClient } from "@/utils/supabase/server";
 import Header from "./components/Header";
 import LandingPage from "./components/LandingPage";
 
+export const dynamic = 'force-dynamic'
+
 export default async function Home() {
   const supabase = await createClient();
   const {
